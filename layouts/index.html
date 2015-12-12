@@ -1,0 +1,14 @@
+{{ partial "header.html" . }}
+
+<main id="content">{{ $paginator := .Paginator }}
+  <ul class="posts">{{ range $index, $page := .Paginator.Pages }}{{ $baseurl := .Site.BaseURL }}
+    <li id="{{ .Slug }}" class="{{ .Section }}">
+      <p class="meta"> <span class="inner">{{if .Params.tags }}{{ range $index, $tag := .Params.tags }}
+          <a class="tag" href="{{ $baseurl }}tags/{{ $tag | urlize }}.html">{{ $tag }}</a>{{ end }}{{ end }}
+      </span> </p>
+      <p class="body"> <a href="{{ .Permalink }}">{{ .Title }}</a> <span class="date"> <time datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" | safeHTML }}"> {{ .Date.Format "Jan 2, 2006" }} </time> </span> </p>
+    </li>{{ end }}
+  </ul>
+{{ partial "pagination.html" $paginator }}</main>
+
+{{ partial "footer.html" . }}
