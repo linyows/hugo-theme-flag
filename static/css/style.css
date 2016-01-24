@@ -68,3 +68,4 @@ nav.pagination {clear:both; margin: 60px auto 10px;color:#bbb; font-family: 'Mon
 .gist .gist-data{opacity:.75;filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=75);color:#000}
 .gist .gist-meta{text-align:left;opacity:.4;filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=40)}
 .gist a{border:none}
+iframe {width:650px;margin:0 auto}
