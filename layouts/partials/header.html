@@ -15,7 +15,7 @@
     <meta name="twitter:site" content="@{{ .Site.Params.twitter }}" />
     <meta name="twitter:creator" content="@{{ .Site.Params.twitter }}" />
     <meta name="twitter:title" content="{{ .Title }}" />
-    <meta name="twitter:description" content="{{ .Description }}" />
+    <meta name="twitter:description" content="{{ if .IsPage }}{{ .Summary }}{{ else }}{{ .Site.Params.description }}{{ end }}" />
     <meta name="twitter:url" content="{{ .Permalink }}" />{{ else }}
     <meta property="og:type" content="website" />{{ end }}
     <title>{{ if ne .URL "/" }} {{ .Title }} &middot; {{ end }} {{ .Site.Title }}</title>{{ if .Description }}
