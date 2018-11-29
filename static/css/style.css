@@ -69,6 +69,41 @@ nav.pagination {clear:both; margin: 60px auto 10px;color:#bbb; font-family: 'Mon
 .gist .gist-meta{text-align:left;opacity:.4;-ms-filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=40)}
 .gist a{border:none}
 iframe {width:650px;margin:0 auto}
+blockquote {
+  border-left: 3px solid #ccc;
+  padding-left: 20px;
+  width: 624px;
+  margin: 30px auto 50px;
+  overflow: hidden;
+  color: #333;
+}
+blockquote ul,
+blockquote ol {
+  width: auto;
+  border: none;
+  padding: 0 10px 5px;
+  margin:0 auto 10px;
+  font-family: Arial;
+}
+blockquote p {
+  width: auto;
+  padding: 0;
+  font-size: 14px;
+  font-family: Arial;
+  text-indent: 0;
+  color: #999;
+}
+blockquote cite:before {
+  content:'--'
+}
+blockquote cite {
+  margin-top: 10px;
+  text-align: right;
+  color: #333;
+  display: block;
+  font-size: 12px;
+  font-style:normal;
+}
 
 @media screen and (max-width:940px) {
   body{padding:15px 0;}
