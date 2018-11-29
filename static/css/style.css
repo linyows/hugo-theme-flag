@@ -125,6 +125,7 @@ blockquote cite {
   article hr,
   article ol,
   article ul,
+  blockquote,
   #footer-nav {width:auto;}
 }
 @media screen and (max-width:414px) {
